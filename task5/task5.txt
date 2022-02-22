@@ -1,0 +1,20 @@
+1.What is the diffrent between git branch and git fork?
+ans:-
+     Forking creates a full copy of your repository, whereas branching only adds a branch to your exiting tree. The file size of branch can vary depending on the branch that you are on. Under the hood git readily accesses the different files and commits depending on what branch you are using.
+
+
+2. different between untracked,changed and stage file?     
+ans:- Untracked changes are not in Git. Unstaged changes are in Git but not marked for commit. Staged changes are in Git and marked for commit.
+
+
+3.how confortable are you with git/github
+ans:-
+    Its helps to upload to share your experiance with others and learn with others projects which is uploaded on github.
+    its may also helping to work with your team .
+
+4.any experiance in working with team?
+ans:-
+    till now we created a college group for working for a website for college club .
+    and we just started now .
+    so, i am begginer in team work and i will definatelly improve it.
+     

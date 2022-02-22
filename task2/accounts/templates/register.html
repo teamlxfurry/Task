@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="signin-box">
+    <h1>Register account</h1>
+        
+    {% comment %} {%if message%}
+    {% for message in messages%}
+    <div class="alert-info">
+        {{message}}
+    </div>
+    {% endfor %}
+    {% endif %} {% endcomment %}
+    <form class="login_form" autocomplete="off" method="post">
+        {% csrf_token %}
+        {%if message%}
+        {% for message in messages%}
+        <div class="alert alert-info">
+            {{message}}
+        </div>
+        {% endfor %}
+        {% endif %}
+        <label class="label1">Username</label>
+        <input class="text" type="text" placeholder="Enter Username" name="username">
+        <label class="label1">Email address</label>
+        <input class="text" type="email" placeholder=" Enter Email" name="email">
+        <div id="email_error">Please fill up a valid Email</div>
+        <label class="label1">Password</label>
+        <input class="text" type="password" placeholder="Enter password" name="password">
+        <div id="password_error">Please fill up a valid Password</div>
+        <input id="btn" type="submit" class="btn" value="Submit">
+    </form>
+
+    <div class="register"> Already have account ?<a class="last" href="/login">Login</a></div>
+</div>
+{%endblock%}

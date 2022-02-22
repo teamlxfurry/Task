@@ -1,0 +1,14 @@
+
+I already create table in models.py in task2 for login.
+
+The below table is the table created  by my sql for login
+
+create table login
+(
+username varchar2(20),
+email varchar2(20),
+password varchar2(20)
+);
+desc login;
+
+# this is the login history table

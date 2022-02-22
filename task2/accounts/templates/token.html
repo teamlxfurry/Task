@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="signin-box">
+<h3>We send a email in your account.Please check</h3>
+<h1>Register account</h1>
+    <form class="login_form" autocomplete="off" method="post">
+        <label class="label1">Email address</label>
+        <input class="text" type="email" placeholder=" Enter Email" name="email">
+        <div id="email_error">Please fill up a valid Email</div>
+        <label class="label1">Password</label>
+        <input class="text" type="password" placeholder="Enter password" name="password">
+        <div id="password_error">Please fill up a valid Password</div>
+        <input id="btn" type="submit" class="btn" value="Submit">
+    </form>
+
+    <div class="register"> Already have account ?<a class="last" href="/login">Login</a></div>
+</div>
+
+{%endblock%}
